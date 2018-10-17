@@ -30,8 +30,5 @@
   version = "0.8.0"
 
 [[constraint]]
-  branch = "master"
-  name = "github.com/technofy/cloudwatch_exporter"
-
-[[constraint]]
   name = "gopkg.in/yaml.v2"
+  version = "v2"

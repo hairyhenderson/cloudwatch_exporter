@@ -6,9 +6,9 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/Technofy/cloudwatch_exporter/config"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
-	"github.com/technofy/cloudwatch_exporter/config"
 	"os"
 	"sync"
 )
@@ -71,7 +71,7 @@ func handleTarget(w http.ResponseWriter, req *http.Request) {
 
 	configMutex.Lock()
 	registry := prometheus.NewRegistry()
-	collector, err := NewCwCollector(target, task, region)
+	collector, err := newCwCollector(target, task, region)
 	if err != nil {
 		// Can't create the collector, display error
 		fmt.Fprintf(w, "Error: %s\n", err.Error())

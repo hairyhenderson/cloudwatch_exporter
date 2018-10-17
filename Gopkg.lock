@@ -2,73 +2,131 @@
 
 
 [[projects]]
+  digest = "1:ba09cd283aed0a2c49d061c03500cecec304068f7afe501e87dad17bf1ddea5d"
   name = "github.com/aws/aws-sdk-go"
-  packages = ["aws","aws/awserr","aws/awsutil","aws/client","aws/client/metadata","aws/corehandlers","aws/credentials","aws/credentials/ec2rolecreds","aws/credentials/endpointcreds","aws/credentials/stscreds","aws/defaults","aws/ec2metadata","aws/endpoints","aws/request","aws/session","aws/signer/v4","private/protocol","private/protocol/query","private/protocol/query/queryutil","private/protocol/rest","private/protocol/xml/xmlutil","service/cloudwatch","service/sts"]
+  packages = [
+    "aws",
+    "aws/awserr",
+    "aws/awsutil",
+    "aws/client",
+    "aws/client/metadata",
+    "aws/corehandlers",
+    "aws/credentials",
+    "aws/credentials/ec2rolecreds",
+    "aws/credentials/endpointcreds",
+    "aws/credentials/stscreds",
+    "aws/defaults",
+    "aws/ec2metadata",
+    "aws/endpoints",
+    "aws/request",
+    "aws/session",
+    "aws/signer/v4",
+    "private/protocol",
+    "private/protocol/query",
+    "private/protocol/query/queryutil",
+    "private/protocol/rest",
+    "private/protocol/xml/xmlutil",
+    "service/cloudwatch",
+    "service/sts",
+  ]
+  pruneopts = ""
   revision = "73b6153078ca6e3fac11a9b86c819e0f82c42aa2"
   version = "v1.8.28"
 
 [[projects]]
   branch = "master"
+  digest = "1:0c5485088ce274fac2e931c1b979f2619345097b39d91af3239977114adf0320"
   name = "github.com/beorn7/perks"
   packages = ["quantile"]
+  pruneopts = ""
   revision = "4c0e84591b9aa9e6dcfdf3e020114cd81f89d5f9"
 
 [[projects]]
+  digest = "1:4f058e70dd54497119d11e7d937f27935aa72cbddc4c2e33941bb16e7dd2bae3"
   name = "github.com/go-ini/ini"
   packages = ["."]
+  pruneopts = ""
   revision = "afbc45e87f3ba324c532d12c71918ef52e0fb194"
 
 [[projects]]
+  digest = "1:2710293486910e4433a5aec7443e71c624db3de2d2933592c455e5945ef72320"
   name = "github.com/golang/protobuf"
   packages = ["proto"]
+  pruneopts = ""
   revision = "7a211bcf3bce0e3f1d74f9894916e6f116ae83b4"
 
 [[projects]]
+  digest = "1:c4239c01bae2646fbc5d0120deb86b8cabc40d01bde261b9cea497fb6f8542ad"
   name = "github.com/jmespath/go-jmespath"
   packages = ["."]
+  pruneopts = ""
   revision = "bd40a432e4c76585ef6b72d3fd96fb9b6dc7b68d"
 
 [[projects]]
   branch = "master"
+  digest = "1:63722a4b1e1717be7b98fc686e0b30d5e7f734b9e93d7dee86293b6deab7ea28"
   name = "github.com/matttproud/golang_protobuf_extensions"
   packages = ["pbutil"]
+  pruneopts = ""
   revision = "c12348ce28de40eed0136aa2b644d0ee0650e56c"
 
 [[projects]]
+  digest = "1:4142d94383572e74b42352273652c62afec5b23f325222ed09198f46009022d1"
   name = "github.com/prometheus/client_golang"
-  packages = ["prometheus","prometheus/promhttp"]
+  packages = [
+    "prometheus",
+    "prometheus/promhttp",
+  ]
+  pruneopts = ""
   revision = "c5b7fccd204277076155f10851dad72b76a49317"
   version = "v0.8.0"
 
 [[projects]]
+  digest = "1:2c2e0c749aa376a90cd48f4b62b55763214f3bb16d2de7eef981062892f61619"
   name = "github.com/prometheus/client_model"
   packages = ["go"]
+  pruneopts = ""
   revision = "6f3806018612930941127f2a7c6c453ba2c527d2"
 
 [[projects]]
+  digest = "1:bb5b78e205b0f0bbbb2227589efaefa790a8d409b10216e0be80689eb44e0dc3"
   name = "github.com/prometheus/common"
-  packages = ["expfmt","internal/bitbucket.org/ww/goautoneg","model"]
+  packages = [
+    "expfmt",
+    "internal/bitbucket.org/ww/goautoneg",
+    "model",
+  ]
+  pruneopts = ""
   revision = "13ba4ddd0caa9c28ca7b7bffe1dfa9ed8d5ef207"
 
 [[projects]]
+  digest = "1:519e27be74befe28370fbade86b17c2f385c8043c7ae74394b63644c0838bc52"
   name = "github.com/prometheus/procfs"
-  packages = [".","xfs"]
+  packages = [
+    ".",
+    "xfs",
+  ]
+  pruneopts = ""
   revision = "65c1f6f8f0fc1e2185eb9863a3bc751496404259"
 
 [[projects]]
-  branch = "master"
-  name = "github.com/technofy/cloudwatch_exporter"
-  packages = ["config"]
-  revision = "46e88cf52f12bc8e32fe891b48572da5cd98fd44"
-
-[[projects]]
+  digest = "1:f0620375dd1f6251d9973b5f2596228cc8042e887cd7f827e4220bc1ce8c30e2"
   name = "gopkg.in/yaml.v2"
   packages = ["."]
-  revision = "cd8b52f8269e0feb286dfeef29f8fe4d5b397e0b"
+  pruneopts = ""
+  revision = "5420a8b6744d3b0345ab293f6fcba19c978f1183"
+  version = "v2.2.1"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "f1bef53a2b464ac5b9fb10ab74363561e24348cfada2cf0b323c263956e25ead"
+  input-imports = [
+    "github.com/aws/aws-sdk-go/aws",
+    "github.com/aws/aws-sdk-go/aws/session",
+    "github.com/aws/aws-sdk-go/service/cloudwatch",
+    "github.com/prometheus/client_golang/prometheus",
+    "github.com/prometheus/client_golang/prometheus/promhttp",
+    "gopkg.in/yaml.v2",
+  ]
   solver-name = "gps-cdcl"
   solver-version = 1
